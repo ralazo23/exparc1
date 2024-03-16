@@ -1,8 +1,7 @@
 {
 
   "scripts": {
-    "test": "jest --watchAll",
-    "test:ci": "jest --ci"
+    "test": "jest --watchAll"
   },
 
   "devDependencies": {
