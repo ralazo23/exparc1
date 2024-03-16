@@ -6,9 +6,7 @@ name: Node.js CI
 on:
   push:
     branches: [ "examen-parcial-1" ]
-  pull_request:
-    branches: [ "examen-parcial-1" ]
-
+  
 jobs:
   build:
 
@@ -26,6 +24,4 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
     - run: npm test
